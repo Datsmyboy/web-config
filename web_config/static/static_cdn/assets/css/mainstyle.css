@@ -1,0 +1,145 @@
+.body {
+	background-color: #eee;
+}
+.topnav {
+	background: #1c9fe7;
+	padding: 10px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+.main-row {
+	padding: 0 20px;
+}
+.profile-photo img {
+	border-radius: 4px;
+}
+.padding-around {
+	padding: 10px;
+}
+.sidebar-left {
+	order: 1;
+	-ms-order: 1;
+	-webkit-order: 1;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: white;
+	border: 1px solid #ddd;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+.sidebar-left-menu {
+
+}
+.sidebar-right {
+	order: 3;
+	-ms-order: 3;
+	-webkit-order: 3;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: white;
+	border: 1px solid #ddd;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+.content {
+	order: 2;
+	-ms-order: 2;
+	-webkit-order: 2;
+	margin: 0 20px;
+	flex: 1;
+}
+.prof-photo img {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+.prof-photo {
+	margin-right: 20px;
+}
+.sidenav-item {
+	padding: 8px;
+	width: 100%;
+	display: block;
+	border-radius: 4px;
+}
+.sidenav-item:hover {
+	background-color: #eee;
+}
+.prof-opt {
+	margin-top: 10px;
+}
+.prof-opt>.prof-opt-item {
+	display: block;
+	color: #1c9fe7;
+}
+.lazyload {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.message_item{
+	background-color: #ccc;
+	width: 100%;
+}
+.message_list-item {
+	background-color: pink;
+	display: block;
+}
+.wrap {
+	position: static;
+}
+.menu-divider {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.input-wrap input {
+	padding: 4px;
+	border-radius: 5px;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 100%!important;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    min-height: 2.5rem!important;
+    resize: vertical;
+}
+.loginform input {
+	padding: 4px;
+	border-radius: 5px;
+	-moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 100%!important;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    min-height: 2.5rem!important;
+    resize: vertical;
+}
+
+.pad20px {
+	padding: 20px!important;
+}
+@media (max-width: 1024px) {
+	.sidebar-right {
+		display: none;
+	}
+	.content {
+		margin-right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.content {
+		margin: 20px 0 0 0;
+	}
+	.sidebar-left-menu {
+		margin-top: 20px;
+	}
+}

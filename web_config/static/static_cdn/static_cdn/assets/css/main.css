@@ -1,0 +1,200 @@
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {
+
+}
+
+
+
+@-ms-viewport{
+  width: device-width;
+}
+
+
+/******Parallax CSS Start******/
+.parallax {
+
+  min-height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-picture-space {
+    padding-top: 10px;
+}
+/******Parallax CSS End******/
+
+
+
+/******Space Padding CSS Start******/
+.space-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/******Space Padding CSS End******/
+
+
+
+/******Row Our Services CSS Start******/
+.row-custom-space-our-services {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+/******Row Our Services CSS End******/
+
+
+
+
+
+
+.gvnav {
+    background: rgb(52, 58, 64, 0.8); !important
+}
+.gvhero {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0!important;
+}
+.gvtitle {
+    color: #0a1a27;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.gv-our-team{
+     padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.gv-our-team-picture{
+     width: 420px;
+     height: 420px;
+
+}
+
+.gv-color-gray-splitter{
+    background-color: #eaeaea;
+}
+
+.ourteam-wrapper {
+    margin: 100px 0;
+}
+.ourteam-item-image img{
+    height: auto;
+    width: 100%;
+}
+
+
+
+/******Footer CSS Start******/
+section {
+    padding: 10px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #99bf10;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #151515 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#99bf10;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+/******Footer CSS End******/
+
