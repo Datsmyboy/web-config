@@ -25,7 +25,7 @@ SECRET_KEY = '58b)gmu-9oh&lpm!z847yw13_5xfd9cy&sbzo+obr9g*cnb)f6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['watchdealerswebsite.herokuapp.com']
 
 
 # Application definition
