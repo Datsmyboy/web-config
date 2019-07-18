@@ -1,0 +1,16 @@
+{% extends 'home_layout.html' %}
+{% block content %}
+<div class="card-lined aft-group">
+	<div class="aft-line"><img src="{{ item.image.url }}"></div>
+	<h4 class="text-default-b">{{ item.title }}</h4>
+	<h4 class="text-default">{{ item.title }}</h4>
+	<h4 class="text-default">Posted: {{ item.date_posted }}</h4>
+	<h4 class="link-green-b aft-group">Price: $ {{ item.price }}</h4>
+	<p class="aft-group">{{ item.content }}</p>
+	<button class="btn-green x-25pc aft-line">Add to Cart</button>
+</div>
+{% endblock %}
+
+
+
+

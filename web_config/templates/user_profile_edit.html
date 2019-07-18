@@ -1,0 +1,64 @@
+
+{% extends 'home_layout.html' %}
+{% block content %}
+<div class="container">
+<form class="card-default aft-group" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="aft-group">
+	    <div class="aft-line">{{ user_form.username.label }}</div>
+		{{ user_form.username }}
+		{{ user_form.username.errors }}
+	</div>
+    <div class="aft-group">
+	    <div class="aft-line">{{ user_form.email.label }}</div>
+		{{ user_form.email }}
+		{{ user_form.email.errors }}
+	</div>
+    <div class="aft-group">
+	    <div class="aft-line">{{ user_form.first_name.label }}</div>
+		{{ user_form.first_name }}
+		{{ user_form.first_name.errors }}
+	</div>
+    <div class="aft-group">
+	    <div class="aft-line">{{ user_form.last_name.label }}</div>
+		{{ user_form.last_name }}
+		{{ user_form.last_name.errors }}
+	</div>
+    <div class="aft-group">
+	    <div class="aft-line">Password</div>
+		{{ user_form.password1 }}
+		{{ user_form.password1.errors }}
+	</div>
+    <div class="aft-group">
+	    <div class="aft-line">Confirm Password</div>
+		{{ user_form.password2 }}
+		{{ user_form.password2.errors }}
+	</div>
+	<button class="btn-blue" type="submit">Submit</button>
+</form>
+
+<form class="card-default" method="POST" enctype="multipart/form-data">
+    <div class="aft-group">
+	    <div class="aft-line">{{ profile_form.photo.label }}</div>
+		{{ profile_form.photo }}
+		{{ profile_form.photo.errors }}
+	</div>
+    <div class="aft-group">
+	    <div class="aft-line">{{ profile_form.occupation.label }}</div>
+		{{ profile_form.occupation }}
+		{{ profile_form.occupation.errors }}
+	</div>
+    <div class="aft-group">
+	    <div class="aft-line">{{ profile_form.address.label }}</div>
+		{{ profile_form.address }}
+		{{ profile_form.address.errors }}
+	</div>
+    <div class="aft-group">
+	    <div class="aft-line">{{ profile_form.bio.label }}</div>
+		{{ profile_form.bio }}
+		{{ profile_form.bio.errors }}
+	</div>
+	<button class="btn-blue" type="submit">Submit</button>
+</form>
+</div>
+{% endblock %}

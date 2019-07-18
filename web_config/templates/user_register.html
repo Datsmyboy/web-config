@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/mainstyle.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/henchmandesign.css' %}">
+</head>
+<body>
+
+<div class="x-100pc y-100vh bg-blue flex-default x-center y-center pad20px">
+    <form class=" card-default x-700px x-100pc-tab " method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h4 class="text-subtitle-b aft-group">Login</h4>
+        <div class="aft-group">
+            <div>{{ form.username.label }}</div>
+            <div  class="loginform">{{ form.email }}</div>
+            <div>{{ form.email.errors }}</div>
+        </div>
+        <div class="aft-group">
+            <div>{{ form.email.label }}</div>
+            <div  class="loginform">{{ form.email }}</div>
+            <div>{{ form.email.errors }}</div>
+        </div>
+        <div class="aft-group">
+            <div>{{ form.first_name.label }}</div>
+            <div  class="loginform">{{ form.first_name }}</div>
+            <div>{{ form.first_name.errors }}</div>
+        </div>
+        <div class="aft-group">
+            <div>{{ form.last_name.label }}</div>
+            <div  class="loginform">{{ form.last_name }}</div>
+            <div>{{ form.last_name.errors }}</div>
+        </div>
+        <div class="aft-group">
+            <div>{{ form.password1.label }}</div>
+            <div  class="loginform">{{ form.password1 }}</div>
+            <div>{{ form.password1.errors }}</div>
+        </div>
+        <div class="aft-group">
+            <div>{{ form.password2.label }}</div>
+            <div  class="loginform">{{ form.password2 }}</div>
+            <div>{{ form.password2.errors }}</div>
+        </div>
+        <button class="btn-blue aft-group" type="submit">Login</button>
+        <p style="text-align: center;">not yet registered? <a href="">Click here</a></p>
+    </form>
+</div>
+
+</body>
+</html>
+

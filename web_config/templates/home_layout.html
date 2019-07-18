@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../static/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/mainstyle.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/henchmandesign.css' %}">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+<div class="topnav">
+  
+</div>
+
+<div class="flex-tab y-start x-between main-row">
+  <div class="x-250px x-100pc-tab sidebar-left">
+  <!-- NAVIGATION SIDEBAR -->
+
+    <!-- Profile Area -->
+    <div class="flex-default aft-group">
+      <div class="x-50px prof-photo"><img src="{{ user.profile.photo.url }}"></div>
+      <div>
+        <p class="text-default-b">{{ user.first_name }}{{ user.last_name }}</p>
+        <p class="text-default">{{ user.profile.occupation }}</p>
+        <a class="link-dark" href="{% url 'logout' %}?next=/login">Log out</a>
+      </div>
+    </div>
+    <div class="lazyload"><a class="link-dark" href="" data-toggle=".">Show More <i class="icon-chevron-down"></i></a></div>
+    <!-- Sidebar Navigation -->
+    <div class="ishidden-tab sidebar-left-menu">
+      <ul class="menu-divider">
+        <a class="sidenav-item" href="/profile/">View Profile</a>
+        <a class="sidenav-item" href="/profile/edit">Edit Profile</a>
+      </ul>
+      <ul>
+        <a class="sidenav-item" href="/inventory/">Inventory</a>
+        <a class="sidenav-item" id="sale">Sales</a>
+        <a class="sidenav-item" href="/">Products</a>
+        <a class="sidenav-item" href="">Google Play</a>
+        <a class="sidenav-item" href="">Apple Store</a>
+      </ul>
+    </div>
+
+  <!-- NAVIGATION SIDEBAR -->
+  </div>
+  <div class="x-250px x-100pc-tab sidebar-right">
+    <h4 class="text-subtitle-b aft-group">My Contacts</h4>
+    <!-- CONTACT SIDEBAR -->
+    <p>No Contacts Yet</p>
+    <!-- Profile Area -->
+<!--     <div class="flex-default aft-group">
+      <div class="x-50px prof-photo"><img src="../static/img/girl.jpg"></div>
+      <div>
+        <p class="text-default-b">Lorem Ipsum Dolor</p>
+        <a class="link-dark">Jeweler</a>
+        <div class="prof-opt">
+          <a class="prof-opt-item" href=""><i class="fa fa-envelope"></i> Message</a>
+          <a class="prof-opt-item" href=""><i class="fa fa-user-minus"></i> Remove</a>
+        </div>
+      </div>
+    </div> 
+      <div class="lazyload"><a class="link-dark" href="">Show More <i class="icon-chevron-down"></i></a></div>-->
+
+
+
+    <!-- CONTACT SIDEBAR -->
+  </div>
+
+  <div class="x-100pc-tab content"  id="renderfile">
+  {% block content %}
+  {% endblock %}
+  </div>
+
+</div>
+</body>
+</html>

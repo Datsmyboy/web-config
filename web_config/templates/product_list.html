@@ -1,0 +1,19 @@
+{% extends 'home_layout.html' %}
+{% block content %}
+<div class="card-lined aft-group">
+	<h2 class="text-default-b aft-line">Post New Product</h2>
+	<a class="btn-blue" href="/new_post/">Post New</a>
+	<!-- <input class="input-field aft-line" name="" type="text">
+	<input class="input-field aft-line" name="" type="file">
+	<textarea class="input-field"></textarea> -->
+</div>
+	{% for item in item %}
+		<div class="card-lined aft-group">
+			<div class="aft-line"><img src="{{ item.image.url}}"></div>
+			<h4 class="text-default-b aft-line">{{ item.title}}</h4>
+			<h4 class="text-default aft-line">{{ item.author}}</h4>
+			<h4 class="link-green-b aft-line">Price: $ {{ item.price}}</h4>
+			<a class="btn-blue x-25pc aft-line" href="/product/{{ item.slug }}">View More</a>
+		</div>
+	{% endfor %}
+{% endblock %}

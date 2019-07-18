@@ -1,0 +1,61 @@
+
+
+{% extends 'home_layout.html' %}
+{% block content %}
+<div class="card-lined">
+<div class="flex-mob">
+	<div class="x-30pc x-100pc-mob padding-around">
+		<div class="profile-photo aft-line">
+			<img src="{{ user.profile.photo.url }}">
+		</div>
+		<button class="btnline-blue aft-line">Message</button>
+		<button class="btnline-blue">Add to group</button>
+	</div>
+	<div class="padding-around x-70pc x-100pc-mob" style="width: 100%;">
+		<!-- Profile Name -->
+		<div class="aft-group">
+			<h4 class="text-subtitle-b">{{ user.first_name }} {{ user.last_name }}</h4>
+			<p class="link-blue-b">{{ user.profile.occupation }}</p>
+		</div>
+		<div class="aft-group">
+			<p class="text-default-b">Birthday</p>
+			<p class="text-default">
+				{{ user.profile.birthday }}
+			</p>
+		</div>
+		<div class="aft-group">
+			<p class="text-default-b">State</p>
+			<p class="text-default">
+				California
+			</p>
+		</div>
+		<div class="aft-group">
+			<p class="text-default-b">Address</p>
+			<p class="text-default">{{ user.profile.address }}</p>
+		</div>
+		<div class="aft-group">
+			<p class="text-default-b">About Me</p>
+			<p class="text-default">{{ user.profile.bio }}</p>
+		</div>
+	</div>
+</div>
+</div>
+{% endblock %}
+
+
+
+<div class="container">
+<h3 class="title"><b>Profile</b></h3>
+<div class="card item">
+	<div><img src=""></div>
+	<div><b>Username: </b>{{ user.username }}</div>
+	<div><b>Full Name: </b>{{ user.first_name }} {{ user.last_name }}</div>
+	<div><i style="color: blue"></i></div>
+	<div><b>Birthday: </b>{{ user.profile.birthday }}</div>
+	<div><b>Business Email: </b>{{ user.email }}</div>
+	<div><b>Business Location: </b></div>
+	<div><b>About Me: </b></div>
+</div>
+</div>
+
+

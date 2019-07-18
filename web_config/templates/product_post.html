@@ -1,0 +1,36 @@
+
+{% extends 'home_layout.html' %}
+{% block content %}
+<form class="card-lined aft-group" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div style="margin-bottom: 20px;">
+	   	<div>{{ form.title.label }}</div>
+	    <div>{{ form.title }}</div>
+	    <div>{{ form.title.errors }}</div>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+	   	<div>{{ form.slug.label }}</div>
+	    <div class="input-wrap">{{ form.slug }}</div>
+	    <div>{{ form.slug.errors }}</div>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+	   	<div>{{ form.price.label }}</div>
+	    <div>{{ form.price }}</div>
+	    <div>{{ form.price.errors }}</div>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+	   	<div>{{ form.content.label }}</div>
+	    <div>{{ form.content }}</div>
+	    <div>{{ form.content.errors }}</div>
+    </div>
+    <div style="margin-bottom: 20px;">
+	   	<div>{{ form.image.label }}</div>
+	    <div>{{ form.image }}</div>
+	    <div>{{ form.image.errors }}</div>
+    </div>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
